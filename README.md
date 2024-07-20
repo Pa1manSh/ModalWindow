@@ -1,5 +1,11 @@
-# Vue 3 + Vite
-
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+#Тестовое задание для JS-программиста
+Необходимо сверстать адаптивную страницу со списком фотографий.
+При клике на фотографии открывается модальное окно с фотографией, списком комментариев и формой добавления комментариев.
+Список ручек:
+GET http://test-backend.itdelta.agency/api/images - получение списка фотографий.
+GET http://test-backend.itdelta.agency/api/image/:imageId - получения большого изображения и списка комментариев.
+POST http://test-backend.itdelta.agency/api/image/:imageId/comments - добавление комментария (204 – OK, комментарий не сохраняется).
+Дизайн можно найти здесь https://www.figma.com/file/3lj6aQtyOdmlsWIiDYHzyJ/
+Результат:
+приложение будет работать локально после yarn && yarn start;
+приложение написано исп
