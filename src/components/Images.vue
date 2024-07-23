@@ -85,7 +85,7 @@ const closeModal = () => {
   text-align: left;
   color: #111827;
   border-radius: 0 0 8px 8px;
-  margin-top: 1px; /* Добавляем отступ сверху для пространства между картинкой и ID */
+  margin-top: 1px;
 }
 
 @media (max-width: 768px) {

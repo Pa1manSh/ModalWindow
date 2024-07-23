@@ -119,7 +119,7 @@ onMounted(async () => {
 
 @media (max-width: 768px) {
   .header-text {
-    padding-left: 50px; /* Настройка для планшетов */
+    padding-left: 50px;
   }
 
   .header-content {
@@ -139,8 +139,8 @@ onMounted(async () => {
 
 @media (max-width: 480px) {
   .header-text {
-    padding-left: 20px; /* Настройка для телефонов */
-    font-size: 20px; /* Уменьшение размера шрифта на телефонах */
+    padding-left: 20px;
+    font-size: 20px;
   }
 
   .header-content {
@@ -154,7 +154,7 @@ onMounted(async () => {
     gap: 5px;
   }
   .avatar-container {
-    top: 100%; /* Располагаем аватарку выше текста и кнопок */
+    top: 100%;
     left: 150px;
   }
 }
