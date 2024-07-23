@@ -42,7 +42,7 @@ const closeModal = () => {
         @click="openModal(image)"
       >
         <img :src="image.image" :alt="'Image ' + image.id" />
-        <p class="image-id">ID: {{ image.id }}</p>
+        <p class="image-id">id: {{ image.id }}</p>
       </div>
     </div>
     <ModalWindow v-if="showModal" :image="selectedImage" @close="closeModal" />
@@ -54,7 +54,7 @@ const closeModal = () => {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
+  gap: 30px;
 }
 
 .image {
@@ -63,6 +63,7 @@ const closeModal = () => {
   height: 216px;
   position: relative;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .image img {
@@ -74,16 +75,17 @@ const closeModal = () => {
 }
 
 .image .image-id {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  font-size: 12px;
+  max-width: 431.33px;
+  height: 20px;
+  gap: 0px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
   text-align: left;
-  color: black;
-  padding: 2px 5px;
+  color: #111827;
   border-radius: 0 0 8px 8px;
+  margin-top: 1px; /* Добавляем отступ сверху для пространства между картинкой и ID */
 }
 
 @media (max-width: 768px) {
