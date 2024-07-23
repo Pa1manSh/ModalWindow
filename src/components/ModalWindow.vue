@@ -217,14 +217,14 @@ const saveComment = async () => {
 .comments-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px; /* Расстояние между комментариями */
+  gap: 8px; 
   margin-top: 10px;
 }
 
 .comment-item {
   background-color: #f0f0f0;
   border-radius: 6px;
-  padding: 4px 8px; /* Уменьшенный отступ для экономии места */
+  padding: 4px 8px;
   display: flex;
   align-items: center;
 }
